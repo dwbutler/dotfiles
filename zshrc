@@ -63,7 +63,23 @@ source $ZSH/themes/blinks.zsh-theme
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmuxinator rails)
+plugins=(
+  aws
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  docker
+  docker-compose
+  autojump
+  fasd
+  common-aliases
+  last-working-dir
+  tmux
+  tmuxinator
+  rails
+  web-search
+  colored-man-pages
+)
 
 DISABLE_CORRECTION="true"
 
