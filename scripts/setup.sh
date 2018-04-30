@@ -22,7 +22,7 @@ DOTFILE_SCRIPTS_DIR=$DOTFILES_DIR/scripts
 if [ ! -d $DOTFILES_DIR ]; then
   if hash git 2>/dev/null; then
     echo "Git is already installed. Cloning repository..."
-    git clone ssh://git@github.com/Stratus3D/dotfiles.git $DOTFILES_DIR
+    git clone ssh://git@github.com/dwbutler/dotfiles.git $DOTFILES_DIR
   else
     echo "Git is not installed. Downloading repository archive..."
     wget https://github.com/dwbutler/dotfiles/archive/master.tar.gz
