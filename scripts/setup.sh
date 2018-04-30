@@ -25,7 +25,7 @@ if [ ! -d $DOTFILES_DIR ]; then
     git clone ssh://git@github.com/Stratus3D/dotfiles.git $DOTFILES_DIR
   else
     echo "Git is not installed. Downloading repository archive..."
-    wget https://github.com/Stratus3D/dotfiles/archive/master.tar.gz
+    wget https://github.com/dwbutler/dotfiles/archive/master.tar.gz
     tar -zxvf master.tar.gz
     mv dotfiles-master dotfiles
     # TODO: If we have to download the archive, we don't git the .git
