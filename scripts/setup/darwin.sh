@@ -190,7 +190,7 @@ brew install pianobar
 
 # QCacheGrind for valgrind analysis
 brew install qcachegrind --with-graphviz
-brew linkapps qcachegrind
+#brew linkapps qcachegrind
 
 # Install GNU readlink
 brew install coreutils
@@ -201,17 +201,11 @@ brew install gnu-sed
 # autoexpect
 brew install expect
 
-# For adb
-brew install android-platform-tools
-
 # Mosh for high latency remote servers
 brew install mobile-shell
 
 # Yarn for package management
 brew install yarn
-
-# Elm for packages that require it
-brew install elm
 
 # For network troubleshooting
 brew install mtr
@@ -226,13 +220,10 @@ brew install gnupg
 brew tap eddieantonio/eddieantonio
 brew install imgcat
 
-# Install tools for server testing and administration
-brew install ansible
-brew cask install vagrant
-brew cask install vagrant-manager # OSX toolbar for vagrant
-
 # Install iperf3 for network performance tests
 brew install iperf3
+
+brew bundle
 
 # Install other software using custom install scripts
 install_scripts=(

@@ -2,25 +2,11 @@
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="blinks"
 
 # This is faster than `autoload -U compinit && compinit`
 autoload -Uz compinit
-if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-  compinit
-else
-  compinit -C
-fi
-
-# This is faster than loading all of oh-my-zsh
-source $ZSH/lib/functions.zsh
-source $ZSH/lib/theme-and-appearance.zsh
-source $ZSH/lib/git.zsh
-source $ZSH/lib/history.zsh
-source $ZSH/lib/key-bindings.zsh
-source $ZSH/lib/completion.zsh
-source $ZSH/lib/misc.zsh
-source $ZSH/plugins/gitfast/gitfast.plugin.zsh
-source $ZSH/themes/blinks.zsh-theme
+compinit
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -66,6 +52,7 @@ source $ZSH/themes/blinks.zsh-theme
 plugins=(
   aws
   git
+  gitfast
   zsh-autosuggestions
   zsh-syntax-highlighting
   docker
@@ -82,6 +69,8 @@ plugins=(
 )
 
 DISABLE_CORRECTION="true"
+
+source $ZSH/oh-my-zsh.sh
 
 # For my dotfiles repo to work correctly the paths to source'd files must be
 # relative to the location of this file. This doesn't handle cases where the

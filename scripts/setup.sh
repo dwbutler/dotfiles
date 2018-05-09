@@ -92,6 +92,8 @@ run_install_scripts() {
     done
 }
 
+export -f run_install_scripts
+
 # Run the OS-specific setup scripts
 if [[ "$unamestr" == 'Darwin' ]]; then
     "$DOTFILE_SCRIPTS_DIR/setup/darwin.sh"
