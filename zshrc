@@ -142,6 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-if [ -e "$ZSHRC_PATH/zshrc.local" ]
+if [ -e "$ZSHRC_PATH/zshrc.local" ]; then
     source "$ZSHRC_PATH/zshrc.local"
-end
+fi

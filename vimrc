@@ -193,6 +193,9 @@ let g:netrw_browse_split = 4
 " Open files on the right
 let g:netrw_altv = 1
 
+" Turn off swap files
+set noswapfile
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
