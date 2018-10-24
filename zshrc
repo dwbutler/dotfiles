@@ -145,3 +145,6 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 if [ -e "$ZSHRC_PATH/zshrc.local" ]; then
     source "$ZSHRC_PATH/zshrc.local"
 fi
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
