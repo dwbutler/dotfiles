@@ -104,3 +104,7 @@ alias urldecode='python -c "import sys, urllib as ul; \
 
 alias urlencode='python -c "import sys, urllib as ul; \
     print ul.quote_plus(sys.argv[1])"'
+
+# Password generation
+alias pw='pwgen -ny 20 1 | tee >(pbcopy)'
+
