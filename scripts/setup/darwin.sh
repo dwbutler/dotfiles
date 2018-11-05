@@ -240,6 +240,7 @@ install_scripts=(
     rebar3.sh
     recon.sh
     relx.sh
+    spaceship_prompt.sh
     sync.sh
     # OSX only
     osxfuse.sh

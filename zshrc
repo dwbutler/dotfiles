@@ -2,7 +2,8 @@
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="blinks"
+ZSH_THEME="spaceship"
+SPACESHIP_BATTERY_SHOW=false
 
 # This is faster than `autoload -U compinit && compinit`
 autoload -Uz compinit
