@@ -235,6 +235,7 @@ install_scripts=(
     prax.sh
     # Erlang
     erlgrind.sh
+    heroku.sh
     observer_cli.sh
     rebar.sh
     rebar3.sh
