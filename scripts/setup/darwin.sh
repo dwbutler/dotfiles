@@ -243,8 +243,9 @@ install_scripts=(
     relx.sh
     spaceship_prompt.sh
     sync.sh
-    # OSX only
-    osxfuse.sh
+    # Mac OS only
+    .macos
+    #osxfuse.sh
     zeal.sh
 )
 
