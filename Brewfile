@@ -48,6 +48,7 @@ brew "kotlin"
 brew "lastpass-cli", args: ["with-pinentry"]
 brew "libpq"
 brew "lz4"
+brew "mas"
 brew "memcached", restart_service: true
 brew "python@2"
 brew "mongodb"
@@ -120,3 +121,9 @@ cask "sourcetree"
 cask "spotify"
 cask "vlc"
 cask "whatsapp"
+mas "LastPass", id: 926036361
+mas "Magnet", id: 441258766
+mas "Mobile Mouse Server", id: 412814284
+mas "Slack", id: 803453959
+mas "Time Out", id: 402592703
+mas "Xcode", id: 497799835
