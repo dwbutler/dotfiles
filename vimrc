@@ -216,16 +216,6 @@ map :tabn <F8>
 map :tabp <F7>
 map <Leader>cr <F5>
 
-" Disable arrow keys
-nnoremap <Left> :echoe "Use h"<cr>
-nnoremap <Right> :echoe "Use l"<cr>
-nnoremap <Up> :echoe "Use k"<cr>
-nnoremap <Down> :echoe "Use j"<cr>
-inoremap <Left> <esc> :echoe "Use h"<cr>
-inoremap <Right> <esc> :echoe "Use l"<cr>
-inoremap <Up> <esc> :echoe "Use k"<cr>
-inoremap <Down> <esc> :echoe "Use j"<cr>
-
 " Allow replacing of searched text by using `cs` on the first result and `n.`
 " on all consecutive results
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
