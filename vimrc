@@ -40,10 +40,10 @@ set autoindent
 set copyindent
 
 " Tab is for spaces
-set tabstop=4
+set tabstop=2
 
 " Number of spaces to use for audo indenting
-set shiftwidth=4
+set shiftwidth=2
 
 " Convert tabs to spaces
 set expandtab
@@ -196,6 +196,10 @@ let g:netrw_altv = 1
 " Turn off swap files
 set noswapfile
 
+" Open new splits below and to the right
+set splitbelow
+set splitright
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -208,13 +212,6 @@ imap <C-s> <esc>:w<CR>
 map <Leader>s <esc>:w<CR>
 map <Leader>m :Rmodel
 imap <esc>:tabn <F7>
-
-" Not sure what these are for
-map gT <F8>
-map gt <F7>
-map :tabn <F8>
-map :tabp <F7>
-map <Leader>cr <F5>
 
 " Allow replacing of searched text by using `cs` on the first result and `n.`
 " on all consecutive results
@@ -318,8 +315,10 @@ nnoremap <silent> <leader>fe :%!erlang_pretty_print -i<CR>
 " Jira ticket command
 nnoremap <silent> <leader>to :!open $BASE_TICKET_URL/<c-r>=expand("<cWORD>")<cr>/<CR>
 
-" Make Q repeat last macro
-nnoremap Q @@
+command! W write
+command! Q quit
+command! QA qa
+command! Qa qa
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RUNNING TESTS
@@ -492,6 +491,14 @@ call ToggleCtrlPIgnores()
 "let g:indent_guides_guide_size = 1
 
 let g:ale_lint_delay = 400
+
+" make test commands execute using dispatch.vim
+let test#strategy = "dispatch"
+
+let g:titlecase_map_keys = 0
+nmap <leader>gt <Plug>Titlecase
+vmap <leader>gt <Plug>Titlecase
+nmap <leader>gT <Plug>TitlecaseLine
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File type settings (file type-specific settings in vim/ftplugin/)

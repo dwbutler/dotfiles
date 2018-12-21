@@ -15,6 +15,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'christoomey/vim-titlecase'
+Plugin 'tpope/vim-endwise'
+Plugin 'itchyny/lightline.vim'
+Plugin 'gabesoft/vim-ags'
+Plugin 'tpope/vim-dispatch'
 
 " Language
 " Erlang
@@ -48,7 +52,10 @@ Plugin 'fatih/vim-go'
 Plugin 'mustache/vim-mustache-handlebars'
 
 " For frameworks
-"Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-sleuth'
+Plugin 'janko-m/vim-test'
 "Plugin 'burnettk/vim-angular'
 
 " For productivity
