@@ -176,3 +176,7 @@ fi
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
+
+# keychain
+/usr/local/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOST-sh
