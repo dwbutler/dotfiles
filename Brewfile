@@ -24,7 +24,7 @@ brew "automake"
 brew "aws-elasticbeanstalk"
 brew "awscli"
 brew "bash"
-brew "binutils", link: true
+brew "binutils"
 brew "bison@2.7"
 brew "boost"
 brew "brotli"
@@ -132,7 +132,7 @@ brew "wdiff"
 brew "wget"
 brew "wxmac", args: ["with-static", "with-stl"]
 brew "xmlstarlet"
-brew "yarn"
+brew "yarn", args: ["without-node"]
 brew "zlib"
 brew "zsh"
 brew "eddieantonio/eddieantonio/imgcat"
