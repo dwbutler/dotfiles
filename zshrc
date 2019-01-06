@@ -137,6 +137,19 @@ bindkey -M vicmd "^V" edit-command-line
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
+# Ruby GC Tuning - https://tunemygc.com/
+export RUBY_GC_HEAP_INIT_SLOTS=1166128
+export RUBY_GC_HEAP_FREE_SLOTS=3498384
+export RUBY_GC_HEAP_GROWTH_FACTOR=1.03
+export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=466451
+export RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.2
+export RUBY_GC_MALLOC_LIMIT=76800000
+export RUBY_GC_MALLOC_LIMIT_MAX=138240000
+export RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR=1.32
+export RUBY_GC_OLDMALLOC_LIMIT=153068509
+export RUBY_GC_OLDMALLOC_LIMIT_MAX=275523316
+export RUBY_GC_OLDMALLOC_LIMIT_GROWTH_FACTOR=1.2
+
 eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
