@@ -63,8 +63,8 @@ set wrapscan
 " Show 4 lines after cursor, useful when reviewing search results
 set scrolloff=4
 
-" Show the 80 column line
-set colorcolumn=80
+" Show the 120 column line
+set colorcolumn=120
 
 " Allow backspace to delete end of line, indent and start of line characters
 set backspace=indent,eol,start
@@ -226,7 +226,7 @@ vnoremap /// y/<C-R>"<CR>
 cmap w!! w !sudo tee >/dev/null %
 
 " Press Space to turn off highlighting and clear any message already displayed.
-:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+:nnoremap <silent> <esc> :nohlsearch<Bar>:echo<CR>
 
 " Toggle everything that occupies space on the left side of the editor
 function! ToggleLeftGuides()
@@ -428,7 +428,7 @@ endfunction
 source $HOME/.vim/plugins.vim
 
 " Start CtrlP on startup
-autocmd VimEnter * CtrlP
+"autocmd VimEnter * CtrlP
 
 " Vim-Erlang Skeleton settings
 let g:erl_replace_buffer=0
@@ -500,6 +500,9 @@ nmap <leader>gt <Plug>Titlecase
 vmap <leader>gt <Plug>Titlecase
 nmap <leader>gT <Plug>TitlecaseLine
 
+" fzf
+set rtp+=/usr/local/opt/fzf
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File type settings (file type-specific settings in vim/ftplugin/)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -515,7 +518,7 @@ autocmd BufRead,BufNewFile *gitconfig set filetype=conf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatically reload .vimrc
-autocmd! BufWritePost .vimrc,*vimrc source %
+autocmd! BufWritePost .vimrc,*vimrc,*plugins.vim source %
 
 " TODO: Turn on showcmd when in visual mode
 "autocmd VisualEnter * silent execute "set showcmd!"

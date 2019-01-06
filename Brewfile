@@ -24,6 +24,7 @@ brew "expect"
 brew "fasd"
 brew "snappy"
 brew "findutils", args: ["with-default-names"]
+brew "fzf"
 brew "gettext", link: true
 brew "gawk"
 brew "git"

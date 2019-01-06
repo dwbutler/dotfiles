@@ -9,6 +9,8 @@ private
 
 # Ignore everything in vim/bundle except Vundle
 vim/bundle/
+# Ignore vim sessions
+vim/sessions/
 
 # Ignore custom files
 mixins/*.custom
