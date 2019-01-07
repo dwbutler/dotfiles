@@ -38,6 +38,7 @@ brew "diff-so-fancy"
 brew "diffutils"
 brew "direnv"
 brew "dnsmasq", restart_service: true
+brew "docker-compose"
 brew "docker-machine", link: false
 brew "ed", args: ["with-default-names"]
 brew "elasticsearch", restart_service: true
