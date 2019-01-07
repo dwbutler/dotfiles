@@ -200,6 +200,9 @@ set noswapfile
 set splitbelow
 set splitright
 
+" https://github.com/vim-airline/vim-airline/issues/124
+set ttimeoutlen=10
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -211,7 +214,7 @@ map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 map <Leader>s <esc>:w<CR>
 map <Leader>m :Rmodel
-imap <esc>:tabn <F7>
+"imap <esc>:tabn <F7>
 
 " Allow replacing of searched text by using `cs` on the first result and `n.`
 " on all consecutive results
@@ -226,7 +229,7 @@ vnoremap /// y/<C-R>"<CR>
 cmap w!! w !sudo tee >/dev/null %
 
 " Press Space to turn off highlighting and clear any message already displayed.
-:nnoremap <silent> <esc> :nohlsearch<Bar>:echo<CR>
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Toggle everything that occupies space on the left side of the editor
 function! ToggleLeftGuides()
@@ -502,6 +505,11 @@ nmap <leader>gT <Plug>TitlecaseLine
 
 " fzf
 set rtp+=/usr/local/opt/fzf
+
+" Airline
+let g:airline_powerline_fonts=1
+let g:airline_theme='light'
+set noshowmode
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File type settings (file type-specific settings in vim/ftplugin/)

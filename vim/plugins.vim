@@ -21,8 +21,12 @@ Plugin 'christoomey/vim-titlecase'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 
+" Status bar
+"Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'tpope/vim-endwise'
-Plugin 'itchyny/lightline.vim'
 Plugin 'gabesoft/vim-ags'
 Plugin 'tpope/vim-dispatch'
 
