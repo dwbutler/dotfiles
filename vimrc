@@ -201,7 +201,8 @@ set splitbelow
 set splitright
 
 " https://github.com/vim-airline/vim-airline/issues/124
-set ttimeoutlen=10
+" https://www.johnhawthorn.com/2012/09/vi-escape-delays/
+set timeoutlen=1000 ttimeoutlen=10
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts

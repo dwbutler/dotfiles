@@ -247,6 +247,7 @@ install_scripts=(
     .macos
     #osxfuse.sh
     zeal.sh
+    zsh.sh
 )
 
 run_install_scripts $install_scripts

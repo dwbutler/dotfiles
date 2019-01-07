@@ -1,10 +1,24 @@
 # Zshrc file
 
+#set -x
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship"
-SPACESHIP_BATTERY_SHOW=false
-SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  node          # Node.js section
+  ruby          # Ruby section
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
 
 # This is faster than `autoload -U compinit && compinit`
 autoload -Uz compinit
@@ -48,6 +62,8 @@ compinit
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+export NVM_AUTO_USE=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -68,7 +84,8 @@ plugins=(
   rails
   web-search
   colored-man-pages
-  nvm
+  zsh-nvm
+  vi-mode
 )
 
 DISABLE_CORRECTION="true"
@@ -116,7 +133,7 @@ precmd() {
 }
 
 # Use vi mode
-#bindkey -v
+bindkey -v
 
 # Vi mode settings
 # Better searching in command mode
@@ -151,22 +168,6 @@ export RUBY_GC_OLDMALLOC_LIMIT_MAX=275523316
 export RUBY_GC_OLDMALLOC_LIMIT_GROWTH_FACTOR=1.2
 
 eval "$(rbenv init -)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# nvm automatic version switch. https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
 
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
