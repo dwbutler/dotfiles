@@ -1,5 +1,6 @@
 tap "buo/cask-upgrade"
 tap "eddieantonio/eddieantonio"
+tap "fluidkeys/tap"
 tap "heroku/brew"
 tap "homebrew/boneyard"
 tap "homebrew/bundle"
@@ -87,6 +88,7 @@ brew "lz4"
 brew "makedepend"
 brew "mas"
 brew "memcached", restart_service: true
+brew "mkcert"
 brew "python@2"
 brew "mongodb", restart_service: true
 brew "mosh"
@@ -137,6 +139,7 @@ brew "yarn", args: ["without-node"]
 brew "zlib"
 brew "zsh"
 brew "eddieantonio/eddieantonio/imgcat"
+brew "fluidkeys/tap/fluidkeys"
 brew "heroku/brew/heroku"
 brew "jmacdonald/amp/amp"
 brew "thoughtbot/formulae/rcm"
