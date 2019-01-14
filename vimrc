@@ -102,8 +102,11 @@ set cursorcolumn
 set visualbell
 set noerrorbells
 
+" no screen flashing
+set t_vb=
+
 " The mouse is evil
-set mouse=
+" set mouse=
 
 " Font
 set guifont=Monaco:h12
@@ -494,7 +497,10 @@ call ToggleCtrlPIgnores()
 "let g:indent_guides_start_level = 0
 "let g:indent_guides_guide_size = 1
 
+" Ale
 let g:ale_lint_delay = 400
+" Fix linting issues on save
+let g:ale_fix_on_save = 1
 
 " make test commands execute using dispatch.vim
 let test#strategy = "dispatch"
