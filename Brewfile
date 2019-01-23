@@ -15,6 +15,7 @@ tap "thoughtbot/formulae"
 cask "java"
 cask "osxfuse"
 brew "openssl"
+brew "readline"
 brew "ansible"
 brew "apr"
 brew "apr-util"
@@ -41,7 +42,7 @@ brew "direnv"
 brew "dnsmasq", restart_service: true
 brew "docker-compose"
 brew "docker-machine", link: false
-brew "ed", args: ["with-default-names"]
+brew "ed"
 brew "elasticsearch", restart_service: true
 brew "exiftool"
 brew "expect"
@@ -62,6 +63,7 @@ brew "gnu-tar"
 brew "gnu-which", args: ["with-default-names"]
 brew "gnutls"
 brew "gnupg", link: false
+brew "qt", link: true
 brew "gnuplot"
 brew "graphviz"
 brew "grep"
@@ -91,6 +93,7 @@ brew "memcached", restart_service: true
 brew "mkcert"
 brew "python@2"
 brew "mongodb", restart_service: true
+brew "protobuf"
 brew "mosh"
 brew "mtr"
 brew "mysql", restart_service: true
@@ -104,11 +107,11 @@ brew "pg_top"
 brew "pgcli"
 brew "pianobar"
 brew "pkg-config"
+brew "postgresql@10"
 brew "pstree"
 brew "pwgen"
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "qt", link: true
 brew "qcachegrind"
 brew "r"
 brew "raptor"
@@ -191,6 +194,7 @@ cask "sublime-text"
 cask "vagrant"
 cask "virtualbox"
 cask "vlc"
+cask "wechat"
 cask "whatsapp"
 cask "xampp"
 mas "Keynote", id: 409183694
