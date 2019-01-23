@@ -86,6 +86,7 @@ plugins=(
   colored-man-pages
   zsh-nvm
   vi-mode
+  extract
 )
 
 DISABLE_CORRECTION="true"
