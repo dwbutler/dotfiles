@@ -71,3 +71,9 @@ callgrind.*
 .project
 
 .tool-versions
+
+# direnv
+.envrc
+
+# IDEA IDEs
+.idea
