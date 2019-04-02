@@ -71,8 +71,6 @@ plugins=(
   aws
   git
   gitfast
-  zsh-autosuggestions
-  zsh-syntax-highlighting
   docker
   docker-compose
   autojump
@@ -178,6 +176,10 @@ fi
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
+
+# Brew installed oh-my-zsh plugins
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # keychain
 /usr/local/bin/keychain $HOME/.ssh/id_rsa

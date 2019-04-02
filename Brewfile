@@ -2,7 +2,6 @@ tap "buo/cask-upgrade"
 tap "eddieantonio/eddieantonio"
 tap "fluidkeys/tap"
 tap "heroku/brew"
-tap "homebrew/boneyard"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -19,6 +18,7 @@ brew "readline"
 brew "ansible"
 brew "apr"
 brew "apr-util"
+brew "boost"
 brew "aspell"
 brew "autoconf"
 brew "autojump"
@@ -28,7 +28,6 @@ brew "awscli"
 brew "bash"
 brew "binutils"
 brew "bison@2.7"
-brew "boost"
 brew "brotli"
 brew "c-ares"
 brew "gettext", link: true
@@ -40,13 +39,14 @@ brew "diff-so-fancy"
 brew "diffutils"
 brew "direnv"
 brew "dnsmasq", restart_service: true
-brew "docker-compose"
-brew "docker-machine", link: false
+brew "docker-compose", link: false
+brew "docker-machine"
 brew "ed"
 brew "elasticsearch", restart_service: true
 brew "exiftool"
 brew "expect"
 brew "fasd"
+brew "gnutls"
 brew "snappy"
 brew "findutils", args: ["with-default-names"]
 brew "flex"
@@ -61,7 +61,6 @@ brew "gnu-indent", args: ["with-default-names"]
 brew "gnu-sed"
 brew "gnu-tar"
 brew "gnu-which", args: ["with-default-names"]
-brew "gnutls"
 brew "gnupg", link: false
 brew "qt", link: true
 brew "gnuplot"
@@ -139,9 +138,11 @@ brew "wdiff"
 brew "wget"
 brew "wxmac", args: ["with-static", "with-stl"]
 brew "xmlstarlet"
-brew "yarn", args: ["without-node"]
+brew "yarn"
 brew "zlib"
 brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 brew "eddieantonio/eddieantonio/imgcat"
 brew "fluidkeys/tap/fluidkeys"
 brew "heroku/brew/heroku"
