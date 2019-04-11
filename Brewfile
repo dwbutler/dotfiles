@@ -39,8 +39,9 @@ brew "diff-so-fancy"
 brew "diffutils"
 brew "direnv"
 brew "dnsmasq", restart_service: true
+brew "docker", link: false
 brew "docker-compose", link: false
-brew "docker-machine"
+brew "docker-machine", restart_service: true
 brew "ed"
 brew "elasticsearch", restart_service: true
 brew "exiftool"
@@ -76,6 +77,7 @@ brew "httpie"
 brew "hub"
 brew "imagemagick"
 brew "iperf3"
+brew "iproute2mac"
 brew "ispell"
 brew "jmeter"
 brew "jq"
@@ -89,6 +91,7 @@ brew "logstash"
 brew "lz4"
 brew "makedepend"
 brew "mas"
+brew "maven"
 brew "memcached", restart_service: true
 brew "mkcert"
 brew "python@2"
@@ -152,6 +155,7 @@ cask "adobe-acrobat-reader"
 cask "adobe-air"
 cask "air-video-server-hd"
 cask "atom"
+cask "azure-data-studio"
 cask "basecamp"
 cask "boostnote"
 cask "boxer"
@@ -172,6 +176,7 @@ cask "github"
 cask "google-backup-and-sync"
 cask "gpg-suite"
 cask "insomnia"
+cask "intellij-idea"
 cask "iterm2"
 cask "jdiskreport"
 cask "jetbrains-toolbox"
@@ -199,18 +204,20 @@ cask "sqlworkbenchj"
 cask "sublime-text"
 cask "vagrant"
 cask "virtualbox"
+cask "visual-studio-code"
 cask "vlc"
 cask "wechat"
 cask "whatsapp"
 cask "xampp"
-mas "Keynote", id: 409183694
-mas "LastPass", id: 926036361
-mas "Magnet", id: 441258766
-mas "Mobile Mouse Server", id: 412814284
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Slack", id: 803453959
-mas "Time Out", id: 402592703
-mas "Trello", id: 1278508951
-mas "Wunderlist", id: 410628904
-mas "Xcode", id: 497799835
+mas "com.apple.dt.Xcode", id: 497799835
+mas "com.apple.iWork.Keynote", id: 409183694
+mas "com.apple.iWork.Numbers", id: 409203825
+mas "com.apple.iWork.Pages", id: 409201541
+mas "com.atlassian.trello", id: 1278508951
+mas "com.automattic.SimplenoteMac", id: 692867256
+mas "com.crowdcafe.windowmagnet", id: 441258766
+mas "com.dejal.timeout.free", id: 402592703
+mas "com.lastpass.LastPass", id: 926036361
+mas "com.rpatechnology.mobilemouse", id: 412814284
+mas "com.tinyspeck.slackmacgap", id: 803453959
+mas "com.wunderkinder.wunderlistdesktop", id: 410628904
