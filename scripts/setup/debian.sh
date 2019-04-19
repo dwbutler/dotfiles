@@ -125,7 +125,7 @@ sudo snap install vlc
 sudo snap install spotify
 
 # Assume we are using Gnome
-source gnome.sh
+#source gnome.sh
 
 # Install other software using custom install scripts
 install_scripts=(
