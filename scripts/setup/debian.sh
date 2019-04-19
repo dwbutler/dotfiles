@@ -49,7 +49,6 @@ sudo apt-get -y install thunderbird
 sudo apt-get -y install enigmail # For secure email
 sudo snap install slack --classic
 sudo snap install skype --classic
-sudo snap install whatsapp --classic
 
 # For emoji
 sudo apt-get -y install ttf-ancient-fonts
