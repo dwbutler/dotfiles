@@ -17,23 +17,25 @@ IFS=$'\t\n' # Stricter IFS settings
 # Make apt-get calls non-interactive
 DEBIAN_FRONTEND=noninteractive
 
-# Tools I need for development
-# Add apt apt-get repository with latest version of Git
-sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
+
+# Tools I need for development
 sudo apt-get -y install git
 sudo apt-get -y install zsh
 sudo apt-get -y install vim
 sudo apt-get -y install tmux
 sudo apt-get -y install curl
 sudo apt-get -y install httpie
-
-# other development tools
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install exuberant-ctags
 sudo apt-get -y install jq
 sudo apt-get -y install linux-tools-`uname -r` # perf
 sudo apt-get -y install dstat
+sudo apt-get -y install autojump
+sudo apt-get -y install awscli
+sudo apt-get -y install dnsmasq
+sudo apt-get -y install docker
+sudo snap install code --classic
 
 # VirtualBox for VMs
 sudo apt-get -y install virtualbox
@@ -46,28 +48,12 @@ sudo apt-get -y install weechat
 sudo apt-get -y install thunderbird
 sudo apt-get -y install enigmail # For secure email
 sudo snap install slack --classic
+sudo snap install skype --classic
+sudo snap install whatsapp --classic
 
 # For emoji
 sudo apt-get -y install ttf-ancient-fonts
 
-# Skype
-sudo snap install skype --classic
-
-# Google Chrome
-#sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-#sudo apt-get update
-#sudo apt-get install google-chrome-stable
-
-# Redshift dependencies
-sudo apt-get install -y autopoint intltool libdrm-dev libxcb1-dev libxcb-randr0-dev
-#sudo apt-get install -y libgeoclue-dev geoclue-hostip
-
-# WxWidgets is needed for Erlang
-#sudo apt-get -y install libwxgtk3.0-dev libwxgtk3.0-dbg
-
-# Other packages needed for Erlang
-#sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev libpng3
 
 sudo apt-get -y install autoconf
 sudo apt-get -y install libtool
@@ -76,7 +62,7 @@ sudo apt-get -y install libtool
 sudo apt-get -y install gimp
 
 # Vector graphics
-sudo apt-get -y install inkscape
+#sudo apt-get -y install inkscape
 
 # Visualization library
 sudo apt-get -y install graphviz
@@ -92,6 +78,7 @@ sudo apt-get -y install nodejs
 # Postgres
 sudo apt-get -y install postgresql
 sudo apt-get -y install libpq-dev # development package
+sudo apt-get -y install pgcli
 
 # Install pip so we can install python packages easily
 sudo apt-get -y install python-pip
@@ -119,11 +106,6 @@ sudo apt-get -y install mosh
 # Install iperf so I can test network latency
 sudo apt-get -y install iperf3
 
-# Install Blender for 3D modeling
-#sudo add-apt-repository ppa:thomas-schiex/blender
-#sudo apt-get update
-#sudo apt-get -y install blender
-
 # Install Scribus for publishing
 sudo apt-get -y install scribus
 
@@ -147,6 +129,10 @@ sudo apt-get -y install kdenlive
 
 # Assume we are using Gnome
 source gnome.sh
+
+# Entertainment
+sudo snap install vlc
+sudo snap install spotify
 
 # Install other software using custom install scripts
 install_scripts=(
