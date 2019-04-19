@@ -18,8 +18,8 @@ pip install csvkit
 # fb-messenger-cli for messaging
 npm install -g fb-messenger-cli
 
-# Install jslint for linting
-npm install -g jslint
+# Install eslint for linting
+npm install -g eslint
 
 # Install xml2json tool
 npm install -g xml2json-command

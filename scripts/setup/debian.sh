@@ -26,6 +26,7 @@ sudo apt-get -y install zsh
 sudo apt-get -y install vim
 sudo apt-get -y install tmux
 sudo apt-get -y install curl
+sudo apt-get -y install httpie
 
 # other development tools
 sudo apt-get -y install silversearcher-ag
@@ -33,16 +34,9 @@ sudo apt-get -y install exuberant-ctags
 sudo apt-get -y install jq
 sudo apt-get -y install linux-tools-`uname -r` # perf
 sudo apt-get -y install dstat
-# For use with Erlang's fprof
-sudo apt-get -y install kcachegrind
-sudo apt-get -y install vagrant
-sudo apt-get -y install ansible
 
 # VirtualBox for VMs
-sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
-wget -q -O - https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y install virtualbox-5.2
+sudo apt-get -y install virtualbox
 
 # Shell script linting
 sudo apt-get -y install shellcheck
@@ -51,39 +45,32 @@ sudo apt-get -y install shellcheck
 sudo apt-get -y install weechat
 sudo apt-get -y install thunderbird
 sudo apt-get -y install enigmail # For secure email
+sudo snap install slack --classic
 
 # For emoji
 sudo apt-get -y install ttf-ancient-fonts
 
 # Skype
-# Skype is in the canonical partner repository
-# https://help.ubuntu.com/community/Skype
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo apt-get update
-sudo apt-get -y install skype
+sudo snap install skype --classic
 
 # Google Chrome
-sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+#sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get install google-chrome-stable
 
 # Redshift dependencies
 sudo apt-get install -y autopoint intltool libdrm-dev libxcb1-dev libxcb-randr0-dev
 #sudo apt-get install -y libgeoclue-dev geoclue-hostip
 
 # WxWidgets is needed for Erlang
-sudo apt-get -y install libwxgtk3.0-dev libwxgtk3.0-dbg
+#sudo apt-get -y install libwxgtk3.0-dev libwxgtk3.0-dbg
 
 # Other packages needed for Erlang
-sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev libpng3
+#sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev libpng3
 
-# Love 2D for game development
-# These are needed by love 2d
 sudo apt-get -y install autoconf
 sudo apt-get -y install libtool
-sudo add-apt-repository ppa:bartbes/love-stable
-sudo apt-get -y install love
 
 # Photo editing
 sudo apt-get -y install gimp
@@ -133,9 +120,9 @@ sudo apt-get -y install mosh
 sudo apt-get -y install iperf3
 
 # Install Blender for 3D modeling
-sudo add-apt-repository ppa:thomas-schiex/blender
-sudo apt-get update
-sudo apt-get -y install blender
+#sudo add-apt-repository ppa:thomas-schiex/blender
+#sudo apt-get update
+#sudo apt-get -y install blender
 
 # Install Scribus for publishing
 sudo apt-get -y install scribus
@@ -166,7 +153,7 @@ install_scripts=(
     # Testing
     bats.sh
     # Color
-    redshift.sh
+    #redshift.sh
     # JavaScript
     doctorjs.sh
     # Ruby
@@ -174,7 +161,7 @@ install_scripts=(
     # Erlang
     rebar.sh
     rebar3.sh
-    erlgrind.sh
+    #erlgrind.sh
     observer_cli.sh
     recon.sh
     relx.sh
