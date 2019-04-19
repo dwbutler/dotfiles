@@ -90,14 +90,8 @@ sudo apt-get -y install zeal
 # ReText
 sudo apt-get -y install retext
 
-# Enable DVD playback
-sudo /usr/share/doc/libdvdread4/install-css.sh
-
-# Install Pandora CLI
-sudo apt-get -y install pianobar
-
 # Install Android Debug Bridge
-sudo apt-get -y install android-tools-adb
+#sudo apt-get -y install android-tools-adb
 
 # Install mosh shell for high latency servers
 sudo apt-get -y install mosh
@@ -126,12 +120,12 @@ sudo apt-get -y install audacity
 # Video editing
 sudo apt-get -y install kdenlive
 
-# Assume we are using Gnome
-source gnome.sh
-
 # Entertainment
 sudo snap install vlc
 sudo snap install spotify
+
+# Assume we are using Gnome
+source gnome.sh
 
 # Install other software using custom install scripts
 install_scripts=(
