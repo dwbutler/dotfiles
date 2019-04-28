@@ -78,3 +78,6 @@ callgrind.*
 # IDEs
 .idea
 .vscode
+
+# Vim
+*.swp

@@ -182,18 +182,15 @@ brew link graphviz
 # Install command-line JSON processor
 brew install jq
 
-# WxWidgets for Erlang
-brew install wxmac --with-static --with-stl --universal
-
 # Install pianobar for music
 brew install pianobar
 
 # QCacheGrind for valgrind analysis
-brew install qcachegrind --with-graphviz
+brew install qcachegrind
 #brew linkapps qcachegrind
 
 # Install GNU readlink
-brew install coreutils
+#brew install coreutils
 
 # Install GNU sed
 brew install gnu-sed
@@ -202,26 +199,7 @@ brew install gnu-sed
 brew install expect
 
 # Mosh for high latency remote servers
-brew install mobile-shell
-
-# Yarn for package management
-brew install yarn
-
-# For network troubleshooting
-brew install mtr
-
-# OSX alternative to `ps auxf` for process tree views
-brew install pstree
-
-# Required by asdf-nodejs
-brew install gnupg
-
-# Images in the terminal
-brew tap eddieantonio/eddieantonio
-brew install imgcat
-
-# Install iperf3 for network performance tests
-brew install iperf3
+#brew install mobile-shell
 
 brew bundle
 
