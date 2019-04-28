@@ -178,9 +178,11 @@ fi
 export PATH="/usr/local/bin:$PATH"
 
 # Brew installed oh-my-zsh plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # keychain
-/usr/local/bin/keychain $HOME/.ssh/id_rsa
-source $HOME/.keychain/$HOST-sh
+if [[ -e /usr/local/bin/keychain ]]; then
+  /usr/local/bin/keychain $HOME/.ssh/id_rsa
+  source $HOME/.keychain/$HOST-sh
+fi
