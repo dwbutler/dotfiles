@@ -21,7 +21,11 @@ sudo apt-get update
 
 # Tools I need for development
 sudo apt-get -y install git
+
+# ZShell
 sudo apt-get -y install zsh
+sudo chsh -s $(which zsh) root
+
 sudo apt-get -y install vim
 sudo apt-get -y install tmux
 sudo apt-get -y install curl
@@ -34,8 +38,23 @@ sudo apt-get -y install dstat
 sudo apt-get -y install autojump
 sudo apt-get -y install awscli
 sudo apt-get -y install dnsmasq
-sudo apt-get -y install docker
 sudo snap install code --classic
+# sudo snap install gitkraken
+
+# Diff So Fancy
+sudo wget https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy -O /usr/local/bin/diff-so-fancy
+sudo chmod 777 /usr/local/bin/diff-so-fancy
+
+# Lastpass CLI
+sudo apt-get -y install lastpass-cli
+
+# Languages
+sudo apt-get -y install rbenv
+# nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+# Fonts
+sudo apt-get install powerline fonts-powerline
 
 # VirtualBox for VMs
 sudo apt-get -y install virtualbox
@@ -124,27 +143,33 @@ sudo apt-get -y install kdenlive
 sudo snap install vlc
 sudo snap install spotify
 
-# Assume we are using Gnome
+# Utilities
+sudo apt-get install htop
+
+# Gnome tweaks
 #source gnome.sh
 
+# Remap caps lock to escape.
+sudo apt-get install dconf-tools
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+
+
 # Install other software using custom install scripts
-install_scripts=(
+#install_scripts=(
     # Testing
-    bats.sh
+    # bats.sh
     # Color
     #redshift.sh
     # JavaScript
-    doctorjs.sh
+    # doctorjs.sh
     # Ruby
-    prax.sh
-    # Erlang
-    rebar.sh
-    rebar3.sh
-    #erlgrind.sh
-    observer_cli.sh
-    recon.sh
-    relx.sh
-    sync.sh
-)
+    # prax.sh
+    #observer_cli.sh
+    #recon.sh
+    #relx.sh
+    #sync.sh
+    spaceship_prompt.sh
+    zsh.sh
+#)
 
 run_install_scripts $install_scripts

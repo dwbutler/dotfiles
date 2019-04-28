@@ -75,5 +75,6 @@ callgrind.*
 # direnv
 .envrc
 
-# IDEA IDEs
+# IDEs
 .idea
+.vscode

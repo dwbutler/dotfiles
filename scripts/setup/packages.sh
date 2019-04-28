@@ -28,4 +28,4 @@ npm install -g xml2json-command
 ###############################################################################
 
 # Setup cpan and install packages for irssi
-cpan Lingua::Ispell
+#cpan Lingua::Ispell

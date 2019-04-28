@@ -9,10 +9,6 @@ else
     echo "asdf already installed"
 fi
 
-###############################################################################
-# Create symlinks to custom config now that all the software is installed
-###############################################################################
-$DOTFILE_SCRIPTS_DIR/makesymlinks.sh
 
 ###############################################################################
 # Reload the .bashrc so we have asdf and all the other recently installed tools

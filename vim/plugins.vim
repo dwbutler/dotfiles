@@ -75,12 +75,15 @@ Plugin 'apidock.vim'
 " toggle ruby blocks style
 Plugin 'vim-scripts/blockle.vim'
 " i18n extraction plugin
-Plugin 'stefanoverna/vim-i18n'
+" Plugin 'stefanoverna/vim-i18n'
 
+" IDE Features
 " ale for syntax checking
 Plugin 'w0rp/ale'
 " editorconfig.org support
 Plugin 'editorconfig/editorconfig-vim'
+" Auto trigger completion popup menu
+Plugin 'vim-autocomplpop'
 
 " For productivity
 Plugin 'tpope/vim-ragtag'

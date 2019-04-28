@@ -557,6 +557,10 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='light'
 set noshowmode
 
+" Omnicompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File type settings (file type-specific settings in vim/ftplugin/)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
