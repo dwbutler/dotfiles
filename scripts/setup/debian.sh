@@ -41,12 +41,30 @@ sudo apt-get -y install dnsmasq
 sudo snap install code --classic
 # sudo snap install gitkraken
 
+# Heroku CLI
+sudo snap install --classic heroku
+
+# Shutter (for screenshots)
+# https://www.linuxuprising.com/2018/10/shutter-removed-from-ubuntu-1810-and.html
+sudo add-apt-repository ppa:linuxuprising/shutter
+sudo apt-get update
+sudo apt install shutter
+sudo apt install gnome-web-photo
+
+sudo snap install postman
+
 # Diff So Fancy
 sudo wget https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy -O /usr/local/bin/diff-so-fancy
 sudo chmod 777 /usr/local/bin/diff-so-fancy
 
 # Lastpass CLI
 sudo apt-get -y install lastpass-cli
+
+# Google Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update
+sudo apt-get -y install google-chrome-stable
 
 # Languages
 sudo apt-get -y install rbenv
@@ -147,12 +165,7 @@ sudo snap install spotify
 sudo apt-get install htop
 
 # Gnome tweaks
-#source gnome.sh
-
-# Remap caps lock to escape.
-sudo apt-get install dconf-tools
-dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
-
+source ./scripts/setup/gnome.sh
 
 # Install other software using custom install scripts
 #install_scripts=(
