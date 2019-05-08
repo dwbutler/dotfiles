@@ -3,6 +3,8 @@
 # Install Spaceship Prompt
 # https://github.com/denysdovhan/spaceship-prompt
 
-git clone https://github.com/denysdovhan/spaceship-prompt.git "~/.oh-my-zsh/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "~/.oh-my-zsh/themes/spaceship.zsh-theme"
+mkdir -p $HOME/.oh-my-zsh/custom/themes
+git clone https://github.com/denysdovhan/spaceship-prompt.git $HOME/.oh-my-zsh/custom/themes/spaceship-prompt
+rm $HOME/.oh-my-zsh/themes/spaceship.zsh-theme
+ln -s "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
 

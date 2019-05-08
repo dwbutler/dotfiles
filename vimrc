@@ -561,6 +561,9 @@ set noshowmode
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
+" Don't autoload session
+:let g:session_autoload = 'no'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File type settings (file type-specific settings in vim/ftplugin/)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

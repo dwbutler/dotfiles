@@ -21,8 +21,8 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 # This is faster than `autoload -U compinit && compinit`
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -125,11 +125,11 @@ setopt EXTENDED_HISTORY
 # Import newly written commands from the history file
 setopt SHARE_HISTORY
 
-precmd() {
-    if [ "$(id -u)" -ne 0 ]; then
-        echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history | tail -n 1)" >>! $HOME/history/zsh-history-$(date "+%Y-%m-%d").log;
-    fi
-}
+#precmd() {
+    #if [ "$(id -u)" -ne 0 ]; then
+        #echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history | tail -n 1)" >>! $HOME/history/zsh-history-$(date "+%Y-%m-%d").log;
+    #fi
+#}
 
 # Use vi mode
 bindkey -v
