@@ -184,3 +184,6 @@ if [[ -e /usr/local/bin/keychain ]]; then
   /usr/local/bin/keychain $HOME/.ssh/id_rsa
   source $HOME/.keychain/$HOST-sh
 fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

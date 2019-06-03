@@ -43,6 +43,7 @@ brew "dnsmasq", restart_service: true
 brew "docker", link: false
 brew "docker-compose", link: false
 brew "docker-machine", restart_service: true, link: false
+brew "duck"
 brew "ed"
 brew "elasticsearch", restart_service: true
 brew "exiftool"
@@ -79,6 +80,7 @@ brew "imagemagick"
 brew "iperf3"
 brew "iproute2mac"
 brew "ispell"
+brew "jid"
 brew "jmeter"
 brew "jq"
 brew "jupyter"
@@ -119,7 +121,6 @@ brew "qt", link: true
 brew "qcachegrind"
 brew "r"
 brew "raptor"
-brew "rbenv"
 brew "re2c"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
@@ -213,15 +214,15 @@ cask "vlc"
 cask "wechat"
 cask "whatsapp"
 cask "xampp"
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Numbers", id: 409203825
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.atlassian.trello", id: 1278508951
-mas "com.automattic.SimplenoteMac", id: 692867256
-mas "com.crowdcafe.windowmagnet", id: 441258766
-mas "com.dejal.timeout.free", id: 402592703
-mas "com.lastpass.LastPass", id: 926036361
 mas "com.rpatechnology.mobilemouse", id: 412814284
-mas "com.tinyspeck.slackmacgap", id: 803453959
-mas "com.wunderkinder.wunderlistdesktop", id: 410628904
+mas "Keynote", id: 409183694
+mas "LastPass", id: 926036361
+mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Simplenote", id: 692867256
+mas "Slack", id: 803453959
+mas "Time Out", id: 402592703
+mas "Trello", id: 1278508951
+mas "Wunderlist", id: 410628904
+mas "Xcode", id: 497799835
