@@ -21,6 +21,7 @@ sudo apt-get update
 
 # Tools I need for development
 sudo apt-get -y install git
+sudo apt-get -y install git-flow
 
 # ZShell
 sudo apt-get -y install zsh
@@ -33,6 +34,7 @@ sudo apt-get -y install httpie
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install exuberant-ctags
 sudo apt-get -y install jq
+sudo apt-get -y install jid
 sudo apt-get -y install linux-tools-`uname -r` # perf
 sudo apt-get -y install dstat
 sudo apt-get -y install autojump
@@ -41,6 +43,21 @@ sudo apt-get -y install dnsmasq
 sudo snap install code --classic
 # sudo snap install gitkraken
 
+# Password generation
+sudo apt-get -y install pwgen
+
+# Clipboard support
+sudo apt install -y xclip
+
+# https://unix.stackexchange.com/questions/442379/magic-mouse-2-driver-touch-scroll
+
+# Ubuntu Kernel Updater
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo apt-get update && sudo apt-get -y install ukuu
+
+# Magic Mouse driver
+sudo apt-get -y install dkms
+
 # Heroku CLI
 sudo snap install --classic heroku
 
@@ -48,8 +65,16 @@ sudo snap install --classic heroku
 # https://www.linuxuprising.com/2018/10/shutter-removed-from-ubuntu-1810-and.html
 sudo add-apt-repository ppa:linuxuprising/shutter
 sudo apt-get update
-sudo apt install shutter
-sudo apt install gnome-web-photo
+sudo apt install -y shutter
+sudo apt install -y gnome-web-photo
+
+# Peek (for screen recording)
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt-get update
+sudo apt-get -y install peek
+
+# Kazam (for screencast with audio)
+sudo apt-get -y install kazam
 
 sudo snap install postman
 
@@ -67,9 +92,19 @@ sudo apt-get update
 sudo apt-get -y install google-chrome-stable
 
 # Languages
-sudo apt-get -y install rbenv
+# rvm
+# https://github.com/rvm/ubuntu_rvm
+sudo apt-get -y install software-properties-common
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get -y install rvm
+sudo usermod -a -G rvm $(whoami)
+sudo usermod -a -G rvm root
+
 # nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+# groovy
+sudo apt-get -y install groovy
 
 # Fonts
 sudo apt-get install powerline fonts-powerline
@@ -161,11 +196,23 @@ sudo apt-get -y install kdenlive
 sudo snap install vlc
 sudo snap install spotify
 
+# https://websiteforstudents.com/how-to-enable-ubuntu-18-04-lts-beta-to-play-videos-files/
+sudo apt-get -y install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly #libdvd-pkg
+sudo apt-get -y install ubuntu-restricted-extras
+
 # Utilities
 sudo apt-get install htop
 
 # Gnome tweaks
 source ./scripts/setup/gnome.sh
+
+# Unity Desktop
+sudo apt install -y ubuntu-unity-desktop
+
+# Stretchly (break timer)
+mkdir -p ~/Applications
+wget https://github.com/hovancik/stretchly/releases/download/v0.19.1/stretchly.0.19.1.AppImage -O ~/Applications
+chmod 755 ~/Applications/stretchly.0.19.1.AppImage
 
 # Install other software using custom install scripts
 #install_scripts=(

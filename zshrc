@@ -166,8 +166,6 @@ export RUBY_GC_OLDMALLOC_LIMIT=153068509
 export RUBY_GC_OLDMALLOC_LIMIT_MAX=275523316
 export RUBY_GC_OLDMALLOC_LIMIT_GROWTH_FACTOR=1.2
 
-eval "$(rbenv init -)"
-
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 if [ -e "$ZSHRC_PATH/zshrc.local" ]; then

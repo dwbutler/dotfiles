@@ -105,6 +105,15 @@ alias urldecode='python -c "import sys, urllib as ul; \
 alias urlencode='python -c "import sys, urllib as ul; \
     print ul.quote_plus(sys.argv[1])"'
 
+# Alias copy to copy to system clipboard
+if [[ "$os" = 'Linux' ]]; then
+  alias copy='xclip -sel clip'
+fi
+
+if [[ "$os" = 'Darwin' ]]; then
+  alias copy='pbcopy'
+fi
+
 # Password generation
-alias pw='pwgen -ny 20 1 | tee >(pbcopy)'
+alias pw='pwgen -ny 20 1 | tee >(copy)'
 
