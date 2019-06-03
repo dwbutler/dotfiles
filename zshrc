@@ -187,3 +187,6 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+if [[ -e /etc/profile.d/rvm.sh ]]; then
+  source /etc/profile.d/rvm.sh
+fi
