@@ -19,9 +19,12 @@ DEBIAN_FRONTEND=noninteractive
 
 sudo apt-get update
 
-# Tools I need for development
-sudo apt-get -y install git
-sudo apt-get -y install git-flow
+# Homebrew
+sudo apt-get -y install build-essential curl file git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+brew install gcc
+brew bundle install --file=Brewfile.debian
 
 # ZShell
 sudo apt-get -y install zsh
@@ -29,7 +32,7 @@ sudo chsh -s $(which zsh) root
 
 sudo apt-get -y install vim
 sudo apt-get -y install tmux
-sudo apt-get -y install curl
+sudo apt-get -y install curl libcurl4 libcurl4-openssl-dev
 sudo apt-get -y install httpie
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install exuberant-ctags
