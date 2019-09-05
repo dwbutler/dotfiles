@@ -20,7 +20,8 @@ DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
 
 # Homebrew
-sudo apt-get -y install build-essential curl file git
+sudo apt-get -y install build-essential curl file
+sudo apt-get install git git-gui gitk
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 brew install gcc

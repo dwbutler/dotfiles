@@ -12,10 +12,9 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 # Git alias
-alias g="git"
-alias gst="git status"
-alias gco="git commit -m "
+alias gs="git status"
 alias gdh="git diff HEAD "
+alias gco="git checkout"
 
 # Weather
 alias wthr="curl wttr.in/"
