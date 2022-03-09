@@ -139,30 +139,20 @@ else
 fi
 
 # RVM
-gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+brew install gpg
+#gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 curl -sSL https://get.rvm.io | bash
 
 fancy_echo "Updating Homebrew formulas ..."
 brew update
 
-brew_install_or_upgrade 'zsh'
-brew_install_or_upgrade 'git'
-brew_launchctl_restart 'postgresql'
-brew_launchctl_restart 'redis'
-brew_install_or_upgrade 'the_silver_searcher'
-brew_install_or_upgrade 'vim'
-brew_install_or_upgrade 'ctags'
-brew_install_or_upgrade 'tmux'
-brew_install_or_upgrade 'reattach-to-user-namespace'
-brew_install_or_upgrade 'imagemagick'
-brew_install_or_upgrade 'qt'
-brew_install_or_upgrade 'hub'
-brew_install_or_upgrade 'shellcheck'
-brew_install_or_upgrade 'telnet'
+brew bundle
 
-brew_install_or_upgrade 'openssl'
+#brew_install_or_upgrade 'openssl'
 brew unlink openssl && brew link openssl --force
 brew_install_or_upgrade 'libyaml'
+
+rvm install 2.7.2
 
 gem update --system
 
@@ -175,35 +165,6 @@ fancy_echo "Configuring Bundler ..."
 ###############################################################################
 # End of thoughtbot's laptop script
 ###############################################################################
-
-# Exuberant Ctags
-brew install ctags
-
-# Visualization library
-brew install graphviz
-brew link graphviz
-
-# Install command-line JSON processor
-brew install jq
-
-# Install pianobar for music
-brew install pianobar
-
-# QCacheGrind for valgrind analysis
-brew install qcachegrind
-#brew linkapps qcachegrind
-
-# Install GNU readlink
-#brew install coreutils
-
-# Install GNU sed
-brew install gnu-sed
-
-# autoexpect
-brew install expect
-
-# Mosh for high latency remote servers
-#brew install mobile-shell
 
 brew bundle
 

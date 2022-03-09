@@ -115,7 +115,6 @@ source $ZSHRC_PATH/mixins/general
 source $ZSHRC_PATH/mixins/functions
 source $ZSHRC_PATH/mixins/grep
 source $ZSHRC_PATH/mixins/path
-source $ZSHRC_PATH/mixins/asdf
 source $ZSHRC_PATH/mixins/aliases
 source $ZSHRC_PATH/mixins/man_color
 
