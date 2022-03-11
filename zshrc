@@ -191,6 +191,9 @@ if [[ -e /home/linuxbrew ]]; then
   eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
+# for intel x86_64 brew
+alias xbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 if [[ -e /etc/profile.d/rvm.sh ]]; then
