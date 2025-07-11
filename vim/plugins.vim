@@ -38,6 +38,8 @@ Plugin 'elzr/vim-json'
 Plugin 'mxw/vim-jsx'
 " CoffeeScript
 Plugin 'kchmck/vim-coffee-script'
+" Java / Kotlin
+Plugin 'tfnico/vim-gradle'
 
 " Markdown
 Plugin 'plasticboy/vim-markdown'
@@ -63,7 +65,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-sleuth'
-Plugin 'janko-m/vim-test'
+Plugin 'vim-test/vim-test'
 " rake integration
 Plugin 'tpope/vim-rake'
 " A custom text object for selecting ruby blocks (ar/ir)
@@ -78,12 +80,16 @@ Plugin 'vim-scripts/blockle.vim'
 " Plugin 'stefanoverna/vim-i18n'
 
 " IDE Features
+" COC for Language Server Protocol support
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 " ale for syntax checking
 Plugin 'w0rp/ale'
 " editorconfig.org support
 Plugin 'editorconfig/editorconfig-vim'
 " Auto trigger completion popup menu
-Plugin 'vim-autocomplpop'
+"Plugin 'vim-autocomplpop'
+" Tagbar to visualize tags
+Plugin 'preservim/tagbar'
 
 " For productivity
 Plugin 'tpope/vim-ragtag'
@@ -97,6 +103,7 @@ Plugin 'AndrewRadev/switch.vim'
 " Fuzzy Search
 Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " In-editor file browser
 Plugin 'scrooloose/nerdtree'

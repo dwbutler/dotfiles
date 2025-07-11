@@ -75,7 +75,6 @@ plugins=(
   gitfast
   docker
   docker-compose
-  autojump
   fasd
   common-aliases
   last-working-dir
