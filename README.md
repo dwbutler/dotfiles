@@ -31,6 +31,26 @@ This repository contains my Vim, tmux, Zsh, Bash, and asdf config files, a scrip
 
 2. (OSX only) Configure iTerm2 to use the custom profile stored in the dotfiles directory. In the iTerm2 preferences window click the "browse" button and navigate to `~/dotfiles/iterm2_profile/` and select the plist file.
 
+## Scripts
+
+The `scripts/` directory holds small utilities and setup helpers used with these
+dotfiles. They can be run directly from the repository or, after running
+`scripts/setup.sh`, via the symlinks created in `~/bin`.
+
+* `setup.sh` – bootstrap a new machine. Installs packages, creates common
+  directories, and calls the other setup scripts.
+* `makesymlinks.sh` – links configuration files from the repository into your
+  home directory. Useful after pulling new changes.
+* `checkenv.sh` – verifies that required command‑line tools are installed.
+* `generate_gitconfig.sh` / `generate_irssi_config.sh` – merge optional mixin
+  files into the generated `~/.gitconfig` and `~/.irssi/config`.
+* `upon_login.sh` – run commands at login. Create an executable
+  `scripts/upon_login_custom.sh` to add your own tasks.
+* `copy-photos-to-archive` – copy images into date‑based folders. Example:
+  `find . -type f | scripts/copy-photos-to-archive /path/to/archive`.
+* Tool scripts in `scripts/tools/` and Git helpers in `scripts/git/` are
+  symlinked into `~/bin` and available on your shell `PATH`.
+
 ## Software
 
 This is software that I need for my day-to-day programming work. I try to keep this list updated with the latest software I am using. This allows me to quickly setup new development machines. I am developing a script named checkenv.sh that will verify everything is setup properly.
