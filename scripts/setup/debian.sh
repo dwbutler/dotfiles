@@ -23,8 +23,8 @@ sudo apt-get update
 sudo apt-get -y install curl libcurl4 libcurl4-openssl-dev
 sudo apt-get -y install build-essential file
 sudo apt-get install git git-gui gitk
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install gcc
 brew bundle install --file=Brewfile.debian
 
