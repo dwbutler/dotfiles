@@ -61,7 +61,7 @@ function clr_bold            { clr_escape "$1" $CLR_BOLD;            }
 function clr_bright          { clr_escape "$1" $CLR_BRIGHT;          }
 function clr_underscore      { clr_escape "$1" $CLR_UNDERSCORE;      }
 function clr_reverse         { clr_escape "$1" $CLR_REVERSE;         }
-function clr_black           { clr_escape "$1" $CLR_BLANK;           }
+function clr_black           { clr_escape "$1" $CLR_BLACK;           }
 function clr_red             { clr_escape "$1" $CLR_RED;             }
 function clr_green           { clr_escape "$1" $CLR_GREEN;           }
 function clr_brown           { clr_escape "$1" $CLR_BROWN;           }
