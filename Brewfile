@@ -4,13 +4,14 @@ tap "derailed/k9s"
 tap "eddieantonio/eddieantonio"
 tap "fluidkeys/tap"
 tap "heroku/brew"
+tap "jmacdonald/amp"
 tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
+tap "mongodb/brew"
 tap "neovim/neovim"
 tap "petere/postgresql"
 tap "spring-projects-experimental/spring-cli"
 tap "stacklok/tap"
 tap "thoughtbot/formulae"
-brew "openssl@3"
 brew "libyaml"
 brew "sqlite"
 brew "python@3.13"
@@ -21,16 +22,16 @@ brew "aom"
 brew "apr-util"
 brew "aspell"
 brew "autoconf"
+brew "autojump"
 brew "automake"
 brew "aws-elasticbeanstalk"
 brew "awscli"
-brew "bash"
 brew "black"
 brew "boost"
 brew "brew-php-switcher"
 brew "c-ares"
+brew "chezmoi"
 brew "cmake"
-brew "libnghttp2"
 brew "curl"
 brew "unixodbc"
 brew "freetds"
@@ -52,7 +53,7 @@ brew "duck"
 brew "ed", link: true
 brew "exiftool"
 brew "expect"
-brew "unbound"
+brew "eza"
 brew "mpg123"
 brew "rubberband"
 brew "snappy"
@@ -109,12 +110,12 @@ brew "lastpass-cli"
 brew "lazydocker"
 brew "libev"
 brew "libffi"
-brew "libgit2"
 brew "libxslt"
 brew "makedepend"
 brew "mas"
 brew "maven"
 brew "memcached", restart_service: :changed
+brew "mise"
 brew "mkcert"
 brew "mongosh"
 brew "protobuf"
@@ -123,8 +124,10 @@ brew "mtr"
 brew "mycli"
 brew "neovim"
 brew "nghttp2"
+brew "node@22"
 brew "openconnect"
 brew "openssh"
+brew "openssl@1.1"
 brew "openvino"
 brew "ossp-uuid"
 brew "pg_top"
@@ -155,6 +158,7 @@ brew "scala"
 brew "shellcheck"
 brew "ssh-copy-id", link: true
 brew "sslmate"
+brew "starship"
 brew "stern"
 brew "telnet"
 brew "the_silver_searcher"
@@ -170,14 +174,15 @@ brew "wget"
 brew "xmlstarlet"
 brew "yarn"
 brew "zlib"
+brew "zoxide"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "zsh-vi-mode"
 brew "derailed/k9s/k9s"
 brew "eddieantonio/eddieantonio/imgcat"
 brew "heroku/brew/heroku"
-# brew "jmacdonald/amp/amp"  # Removed - build failure
-# brew "mongodb/brew/mongodb-community@5.0"  # Removed - dependency error
+brew "mongodb/brew/mongodb-community@5.0"
 brew "spring-projects-experimental/spring-cli/spring-cli"
 brew "stacklok/tap/thv"
 brew "thoughtbot/formulae/rcm"
@@ -191,6 +196,7 @@ cask "basecamp"
 cask "charles"
 cask "chatgpt"
 cask "chromedriver"
+cask "cursor"
 cask "cursorsense"
 cask "cyberduck"
 cask "discord"
@@ -239,13 +245,16 @@ cask "visual-studio-code"
 cask "vlc"
 cask "vuze"
 cask "wechat"
+cask "wezterm"
 cask "whatsapp"
 cask "zen"
 mas "1Keyboard", id: 766939888
 mas "GoPro Player", id: 1460836908
-mas "HP Smart", id: 1474276998
+mas "HP", id: 1474276998
 mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
 mas "LastPass", id: 926036361
+mas "LastPass for Safari", id: 6504626762
 mas "Magnet", id: 441258766
 mas "Mate Translate", id: 1005088137
 mas "Mobile Mouse Server", id: 412814284
@@ -253,10 +262,13 @@ mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Simplenote", id: 692867256
-mas "TextsWithHistory", id: 6446922890
-mas "TextsWithJesus", id: 6446922759
+mas "Slack", id: 803453959
+mas "TestFlight", id: 899247664
+mas "Text History", id: 6446922890
+mas "Text Jesus", id: 6446922759
 mas "Things", id: 904280696
 mas "Trello", id: 1278508951
+mas "WhatsApp", id: 310633997
 mas "Whisper Transcription", id: 1668083311
 mas "Xcode", id: 497799835
 vscode "continue.continue"
@@ -266,11 +278,13 @@ vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "fabiospampinato.vscode-open-in-github"
 vscode "genieai.chatgpt-vscode"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-playwright.playwright"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "p1c2u.docker-compose"
