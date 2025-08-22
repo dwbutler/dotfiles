@@ -16,7 +16,6 @@ SPACESHIP_PROMPT_ORDER=(
   ruby          # Ruby section
   exec_time     # Execution time
   line_sep      # Line break
-  vi_mode       # Vi-mode indicator
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
@@ -84,9 +83,14 @@ plugins=(
   web-search
   colored-man-pages
   zsh-nvm
-  vi-mode
   extract
 )
+
+# VI mode
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+# autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 DISABLE_CORRECTION="true"
 

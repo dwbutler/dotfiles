@@ -14,11 +14,8 @@ PATH=$HOME/bin:$PATH
 export ERL_LIBS=$HOME/erl_libs
 
 # Java
-JAVA_HOME_BIN=/usr/libexec/java_home
-if [ -f $JAVA_HOME_BIN ]; then
-    export JAVA_HOME=`$JAVA_HOME_BIN -v '1.8*'`
-    PATH=$JAVA_HOME/bin:$PATH
-fi
+export JAVA_HOME="$(brew --prefix openjdk)"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # Go
 # I don't think I need this anymore
