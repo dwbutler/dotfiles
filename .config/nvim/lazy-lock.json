@@ -1,4 +1,5 @@
 {
   "auto-session": { "branch": "main", "commit": "7d37d1cae7a39ff57da9a452d21b5dbfc5636c18" },
-  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" }
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "vim-solarized8": { "branch": "master", "commit": "2f31fc2239c965d7dd9754ba8160582c99211e12" }
 }
