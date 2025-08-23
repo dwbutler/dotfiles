@@ -82,8 +82,8 @@ set formatoptions+=q
 set formatoptions+=n
 
 " Show pastetoggle status and allow it to be toggled with F2
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+" nnoremap <F2> :set invpaste paste?<CR>
+" set pastetoggle=<F2>
 
 " Show the curent mode on the last line (command line)
 set showmode

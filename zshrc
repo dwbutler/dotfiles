@@ -28,6 +28,7 @@ SPACESHIP_PROMPT_ORDER=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim=nvim
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -202,3 +203,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 if [[ -e /etc/profile.d/rvm.sh ]]; then
   source /etc/profile.d/rvm.sh
 fi
+
+# Added by Windsurf
+export PATH="/Users/david.w.butler/.codeium/windsurf/bin:$PATH"

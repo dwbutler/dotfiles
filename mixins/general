@@ -1,5 +1,6 @@
 # Set vim with no config as the default editor
-export EDITOR='vim -u NONE'
+export EDITOR=nvim
+export VISUAL=nvim
 
 #export TZ='America/New_York'
 
