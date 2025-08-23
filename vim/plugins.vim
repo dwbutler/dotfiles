@@ -17,9 +17,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'christoomey/vim-titlecase'
 
-" Session Management
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
+" Session Management (migrated to auto-session.nvim in Neovim)
 
 " Status bar
 "Plugin 'itchyny/lightline.vim'
