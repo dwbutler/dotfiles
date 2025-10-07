@@ -17,5 +17,17 @@ export ERL_LIBS=$HOME/erl_libs
 export JAVA_HOME="$(brew --prefix openjdk)"
 export PATH="$JAVA_HOME/bin:$PATH"
 
+# Added by Windsurf
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
+
+# For postgres
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+if [[ -e /etc/profile.d/rvm.sh ]]; then
+  source /etc/profile.d/rvm.sh
+fi
+
 # Finally export completed PATH
 export PATH

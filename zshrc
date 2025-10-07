@@ -198,14 +198,3 @@ fi
 # for intel x86_64 brew
 alias xbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-if [[ -e /etc/profile.d/rvm.sh ]]; then
-  source /etc/profile.d/rvm.sh
-fi
-
-# Added by Windsurf
-export PATH="/Users/david.w.butler/.codeium/windsurf/bin:$PATH"
-
-# For postgres
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
