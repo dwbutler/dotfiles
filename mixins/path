@@ -5,7 +5,7 @@ PATH=/usr/local/sbin:$PATH
 #PATH=$HOME/lib/apache-ant-1.9.3/bin:$ANDROID_HOME/sdk/platform-tools:$ANDROID_HOME/sdk/tools:$HOME/lib/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:/Applications/CoronaSDK:$PATH
 
 # Development directory
-export DEVELOPMENT_DIR=$HOME/devel
+export DEVELOPMENT_DIR=$HOME/dev
 
 # Binaries for development
 PATH=$HOME/bin:$PATH
@@ -16,11 +16,6 @@ export ERL_LIBS=$HOME/erl_libs
 # Java
 export JAVA_HOME="$(brew --prefix openjdk)"
 export PATH="$JAVA_HOME/bin:$PATH"
-
-# Go
-# I don't think I need this anymore
-#export GOPATH=$DEVELOPMENT_DIR
-#PATH=$GOPATH/bin:$PATH
 
 # Finally export completed PATH
 export PATH

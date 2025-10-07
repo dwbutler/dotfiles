@@ -53,10 +53,7 @@ mkdir -p $HOME/lib # Third-party software
 mkdir -p $HOME/nobackup # All files that shouldn't be backed up the normal way
 mkdir -p $HOME/history # Zsh and Bash history files
 mkdir -p $HOME/erl_libs # $ERL_LIBS directory
-mkdir -p $HOME/devel
-mkdir -p $HOME/devel/src # Go source directory
-mkdir -p $HOME/devel/bin # Go binary directory
-mkdir -p $HOME/devel/archived # Old projects
+mkdir -p $HOME/dev
 mkdir -p $HOME/Documentation
 mkdir -p $HOME/Screenshots
 mkdir -p $HOME/servers # For remote server mounts

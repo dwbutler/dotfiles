@@ -206,3 +206,6 @@ fi
 
 # Added by Windsurf
 export PATH="/Users/david.w.butler/.codeium/windsurf/bin:$PATH"
+
+# For postgres
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
