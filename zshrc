@@ -198,3 +198,32 @@ fi
 # for intel x86_64 brew
 alias xbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
 
+
+# pnpm
+export PNPM_HOME="~/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/david.w.butler/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export PATH="$HOME/.local/bin:$PATH"
+
+# Use Apple's tools for ssh to support UseKeyChain option
+alias ssh='/usr/bin/ssh'
+alias ssh-add='/usr/bin/ssh-add'
+
+# bun completions
+[ -s "/Users/david.w.butler/.bun/_bun" ] && source "/Users/david.w.butler/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/david.w.butler/.antigravity/antigravity/bin:$PATH"

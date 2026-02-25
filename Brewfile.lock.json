@@ -19,23 +19,11 @@
       "heroku/brew": {
         "revision": "67a2d7051e9d989cded7d0776b343022e6c8b03f"
       },
-      "homebrew/bundle": {
-        "revision": "cc596b0daa2f5c36621f7ff1f035a1f91654fb7f"
-      },
       "homebrew/cask": {
         "revision": "7f74492f1b70eed61331ed941dec248baa3a2640"
       },
-      "homebrew/cask-fonts": {
-        "revision": "3a39af1526ef861698bdc25f450caa52078d431d"
-      },
-      "homebrew/cask-versions": {
-        "revision": "67a0afa8473620814db04407c84f9c3ca40f2437"
-      },
       "homebrew/core": {
         "revision": "8bf708f1351a74db13ffc621bf29629d16019ac5"
-      },
-      "homebrew/services": {
-        "revision": "13252a3a14c5d5208f205c82a764acb3b6dfa0e5"
       },
       "jmacdonald/amp": {
         "revision": "aa011d7e69db38206cde328c6146758a5bdaf71e"
