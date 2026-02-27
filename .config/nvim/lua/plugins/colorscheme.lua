@@ -20,6 +20,10 @@ return {
       
       " Make the sign column match the background
       highlight SignColumn guibg=NONE ctermbg=NONE
+
+      " Make terminal background match editor
+      highlight TermNormal guibg=#002b36
+      highlight TermCursorNC guibg=#073642
     ]])
   end,
 }

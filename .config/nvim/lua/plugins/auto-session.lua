@@ -14,9 +14,9 @@ return {
     })
     
     -- Simple keymaps
-    vim.keymap.set("n", "<leader>ss", "<cmd>SessionSave<CR>", { desc = "Session Save" })
-    vim.keymap.set("n", "<leader>sr", "<cmd>SessionRestore<CR>", { desc = "Session Restore" })
-    vim.keymap.set("n", "<leader>sd", "<cmd>SessionDelete<CR>", { desc = "Session Delete" })
-    vim.keymap.set("n", "<leader>sl", "<cmd>SessionRestoreLast<CR>", { desc = "Session Restore Last" })
+    vim.keymap.set("n", "<leader>ss", "<cmd>AutoSession save<CR>", { desc = "Session Save" })
+    vim.keymap.set("n", "<leader>sr", "<cmd>AutoSession restore<CR>", { desc = "Session Restore" })
+    vim.keymap.set("n", "<leader>sd", "<cmd>AutoSession delete<CR>", { desc = "Session Delete" })
+    vim.keymap.set("n", "<leader>sl", "<cmd>AutoSession search<CR>", { desc = "Session Search" })
   end,
 }

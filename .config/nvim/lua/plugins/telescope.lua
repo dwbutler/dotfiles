@@ -42,6 +42,7 @@ return {
     vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help tags" })
     vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Recent files" })
     vim.keymap.set("n", "<leader>fs", builtin.current_buffer_fuzzy_find, { desc = "Find in current buffer" })
+    vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find keymaps" })
   end,
 }
 
