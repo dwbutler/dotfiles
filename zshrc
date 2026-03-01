@@ -227,3 +227,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/david.w.butler/.antigravity/antigravity/bin:$PATH"
+
+# Echo Wolf - Claude Code quick launch
+alias ew='claude "🐺"'
