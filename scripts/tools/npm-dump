@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Unoffical Bash "strict mode"
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\t\n'
+
+DOTFILES_DIR="$HOME/dotfiles"
+PACKAGE_JSON="$DOTFILES_DIR/package.json"
+
+# Get global npm packages as JSON, extract package names, filter built-ins
+packages=$(npm list -g --depth=0 --json 2>/dev/null \
+    | jq -r '.dependencies // {} | keys[] | select(. != "npm" and . != "corepack" and . != "dotfiles-global-packages")')
+
+if [[ -z "$packages" ]]; then
+    echo "No global npm packages found (besides built-ins)."
+    exit 0
+fi
+
+# Build package.json with * versions
+deps=$(echo "$packages" | jq -R . | jq -s 'map({(.): "*"}) | add')
+
+jq -n --argjson deps "$deps" '{
+    "name": "dotfiles-global-packages",
+    "description": "Global npm packages managed by dotfiles",
+    "dependencies": $deps
+}' > "$PACKAGE_JSON"
+
+echo "Updated $PACKAGE_JSON with $(echo "$packages" | wc -l | tr -d ' ') packages."

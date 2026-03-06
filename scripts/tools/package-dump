@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Unoffical Bash "strict mode"
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\t\n'
+
+DOTFILES_DIR="$HOME/dotfiles"
+
+echo "Dumping Homebrew packages..."
+cd "$DOTFILES_DIR" && brew bundle dump --force
+
+echo "Dumping npm global packages..."
+npm-dump
+
+echo "Done."

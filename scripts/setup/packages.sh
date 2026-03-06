@@ -15,14 +15,7 @@ pip install csvkit
 # Node.JS Packages
 ###############################################################################
 
-# fb-messenger-cli for messaging
-npm install -g fb-messenger-cli
-
-# Install eslint for linting
-npm install -g eslint
-
-# Install xml2json tool
-npm install -g xml2json-command
+cd $HOME/dotfiles && npm install -g
 
 # Perl Packages
 ###############################################################################

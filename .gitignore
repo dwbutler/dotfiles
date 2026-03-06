@@ -18,3 +18,4 @@ scripts/custom_tools/
 scripts/custom_functions/
 scripts/upon_login_custom.sh
 *.local
+node_modules/

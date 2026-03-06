@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Unoffical Bash "strict mode"
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\t\n'
+
+echo "Updating Homebrew packages..."
+brew upgrade
+
+echo "Updating npm global packages..."
+npm update -g
+
+echo "Done."

@@ -229,6 +229,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/david.w.butler/.antigravity/antigravity/bin:$PATH"
 
 # Echo Wolf - Claude Code quick launch
-alias ewc='j echowolf && claude "🐺"'
-alias ew='ewc'
+alias ewc='j echowolf && claude --permission-mode acceptEdits "🐺"'
 alias ewp='j echowolf && pi "🐺"'
+alias ew='ewp'

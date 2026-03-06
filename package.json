@@ -1,0 +1,13 @@
+{
+  "name": "dotfiles-global-packages",
+  "description": "Global npm packages managed by dotfiles",
+  "dependencies": {
+    "@e9n/pi-cron": "*",
+    "@googleworkspace/cli": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@tmustier/pi-nes": "*",
+    "@tobilu/qmd": "*",
+    "@zenobius/pi-worktrees": "*",
+    "oh-pi": "*"
+  }
+}

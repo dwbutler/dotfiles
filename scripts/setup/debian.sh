@@ -110,6 +110,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 # groovy
 sudo apt-get -y install groovy
 
+# Global npm packages
+cd $HOME/dotfiles && npm install -g
+
 # Fonts
 sudo apt-get install powerline fonts-powerline
 
