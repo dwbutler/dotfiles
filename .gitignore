@@ -19,3 +19,7 @@ scripts/custom_functions/
 scripts/upon_login_custom.sh
 *.local
 node_modules/
+
+# Sensitive .config directories
+.config/gh/
+.config/chezmoi/

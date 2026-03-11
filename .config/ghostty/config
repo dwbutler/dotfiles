@@ -1,0 +1,25 @@
+# Ghostty config for cmux
+# Docs: https://ghostty.org/docs/config
+
+# Font
+font-family = JetBrains Mono
+font-size = 14
+
+# Disable ghostty's title management (custom hooks in .zshrc handle it)
+shell-integration-features = cursor:blink,path
+
+# Theme (459 built-in themes available)
+# theme = Catppuccin Mocha
+
+# Window
+macos-titlebar-style = native
+# window-padding-x = 8
+# window-padding-y = 4
+# window-decoration = true
+
+# Cursor
+# cursor-style = block
+# cursor-style-blink = true
+
+# Mouse
+# mouse-hide-while-typing = true

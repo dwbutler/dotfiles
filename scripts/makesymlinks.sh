@@ -126,11 +126,8 @@ symlink_and_save_original $dotfiles/tmuxinator/default.yml \
 symlink_and_save_original $dotfiles/erlang/erlang \
     $HOME/.erlang $olddir
 
-# Copy pgcli config. pgcli doesn't seem to support soft links
-cp $dotfiles/.config/pgcli/config $HOME/.config/pgcli/config
-
-# Symlink Neovim config directory
-symlink_and_save_original $dotfiles/.config/nvim $HOME/.config/nvim $olddir
+# Symlink the entire .config directory
+symlink_and_save_original $dotfiles/.config $HOME/.config $olddir
 
 # Symlink all the scripts in scripts/tools to the bin directory
 tool_scripts=$(find $dotfiles/scripts/tools -type f \( -perm -u=x \) -print)

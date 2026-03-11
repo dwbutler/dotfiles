@@ -1,0 +1,4 @@
+collections:
+  echo-wolf-clawd:
+    path: /Users/david.w.butler/dev/unitypeaceproject/echo-wolf-clawd
+    pattern: "**/*.md"
