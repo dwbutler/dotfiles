@@ -43,7 +43,7 @@ alias vim=nvim
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -233,3 +233,15 @@ alias ewc='j echowolf && claude --dangerously-skip-permissions "🐺"'
 # autoSelectFamily fix removed — no longer needed on Node v20.19.5+
 alias ewp='j echowolf && pi "🐺"'
 alias ew='ewp'
+
+# Tab title: "dirname" when idle, "cmd · dirname" when running
+_tab_title_precmd() { print -Pn "\e]2;%1~\a" }
+_tab_title_preexec() {
+  local cmd="${1[(wr)^(*=*|sudo|ssh|mosh|rake|-*)]}"
+  local dir="${PWD:t}"
+  [[ "$PWD" == "$HOME" ]] && dir="~"
+  print -n "\e]2;${cmd} · ${dir}\a"
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd _tab_title_precmd
+add-zsh-hook preexec _tab_title_preexec
