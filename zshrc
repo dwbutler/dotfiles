@@ -229,6 +229,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/david.w.butler/.antigravity/antigravity/bin:$PATH"
 
 # Echo Wolf - Claude Code quick launch
-alias ewc='j echowolf && claude --permission-mode acceptEdits "🐺"'
+alias ewc='j echowolf && claude --dangerously-skip-permissions "🐺"'
+# autoSelectFamily fix removed — no longer needed on Node v20.19.5+
 alias ewp='j echowolf && pi "🐺"'
 alias ew='ewp'

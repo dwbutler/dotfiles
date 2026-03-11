@@ -4,10 +4,18 @@
   "dependencies": {
     "@e9n/pi-cron": "*",
     "@googleworkspace/cli": "*",
+    "@hyperprior/pi-safety": "*",
     "@mariozechner/pi-coding-agent": "*",
     "@tmustier/pi-nes": "*",
     "@tobilu/qmd": "*",
     "@zenobius/pi-worktrees": "*",
-    "oh-pi": "*"
+    "chrome-devtools-mcp": "*",
+    "clawhub": "*",
+    "golembot": "*",
+    "grammy": "*",
+    "oh-pi": "*",
+    "pi-editor": "*",
+    "pi-messenger-bridge": "*",
+    "pi-schedule-prompt": "*"
   }
 }

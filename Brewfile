@@ -57,11 +57,11 @@ brew "ed", link: true
 brew "exiftool"
 brew "expect"
 brew "eza"
+brew "ffmpeg"
 brew "mpg123"
 brew "rubberband"
 brew "snappy"
 brew "tesseract"
-brew "ffmpeg"
 brew "ffmpeg@4"
 brew "flex"
 brew "flyctl"
@@ -93,6 +93,7 @@ brew "helm"
 brew "htop"
 brew "httpie"
 brew "hub"
+brew "ical-buddy"
 brew "libheif"
 brew "libraw"
 brew "imagemagick"
@@ -135,6 +136,7 @@ brew "neovim"
 brew "nghttp2"
 brew "node@22"
 brew "ollama", restart_service: :changed
+brew "openai-whisper"
 brew "openconnect"
 brew "openssh"
 brew "openssl@1.1"
@@ -171,6 +173,7 @@ brew "ssh-copy-id", link: true
 brew "sslmate"
 brew "starship"
 brew "stern"
+brew "tailscale", restart_service: :changed
 brew "telnet"
 brew "the_silver_searcher"
 brew "tig"
@@ -217,6 +220,7 @@ cask "charles"
 cask "chatgpt"
 cask "chromedriver"
 cask "claude-code"
+cask "cmux"
 cask "cursor"
 cask "cursorsense"
 cask "cyberduck"
@@ -243,6 +247,7 @@ cask "kindavim"
 cask "ledger-wallet"
 cask "licecap"
 cask "lm-studio"
+cask "logseq"
 cask "macdown"
 cask "mono-mdk-for-visual-studio"
 cask "mysqlworkbench"
@@ -303,8 +308,8 @@ mas "Mate Translate", id: 1005088137
 mas "Mobile Mouse Server", id: 412814284
 mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "POOLS", id: 6670792878
 mas "Prime Video", id: 545519333
 mas "Resident Evil 3", id: 1640630077
@@ -347,6 +352,7 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "openai.chatgpt"
 vscode "p1c2u.docker-compose"
+vscode "popododo0720.pi-workflow"
 vscode "rdfusion.rdfusion"
 vscode "redhat.java"
 vscode "sonarsource.sonarlint-vscode"
